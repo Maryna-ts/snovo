@@ -56,8 +56,18 @@ html(lang="en")
             div(class="last")
               input.form-control(type='text' placeholder='First')
               input.form-control(type='text' placeholder='Last')
-            label(for='inputEmail4')
-              input(class="umail")#inputEmail.form-control(type='email' placeholder='' required='' autofocus='')  
+            .form-group
+              label(for='exampleInputEmail1') 
+                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+                small#emailHelp.form-text.text-muted Make sure you enter valid email address
+  
+            .form-row
+              label(for='validationServer03')
+                input(class="mail")#validationServer03.form-control.is-invalid(type='text' required='')
+                .invalid-feedback
+                  span Make sure you enter valid email address
+            
+
             p
               input(type='submit' value='Checkout')
 
