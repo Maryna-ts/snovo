@@ -14,65 +14,53 @@ html(lang="en")
     title Document
   body 
     header 
-      container
-  .row
-    .col-md-2
-      div(class="wraper")
-        nav.nav.flex-column
-          a.nav-link.active(href='#') Product
-          a.nav-link(href='#') Product Price
-          a.nav-link(href='#') Mobile Apps
-          a.nav-link(href='#') ACCESSORIES
-          a.nav-link(href='#') Smart Remote
-          a.nav-link(href='#') Auto Charger
-          a.nav-link(href='#') Customer Details
-          a.nav-link(href='#') Name
-            span *
-          a.nav-link(href='#') E-mail
-            span *  
-          a.nav-link(href='#') Country 
-            span *
-          a.nav-link(href='#') Payment Method
+      .container
+        .row
+          .col-md-2
+            div(class="wraper")
+              nav.nav.flex-column
+                div(class="product")
+                  a.nav-link.active(href='#') Product
+                div(class="price")  
+                  a.nav-link(href='#') Product Price
+                div(class="mobile")  
+                  a.nav-link(href='#') Mobile Apps
+                div(class="access")
+                  a.nav-link(href='#') ACCESSORIES
+                div(class="price")
+                  a.nav-link(href='#') Smart Remote
+                div(class="price")
+                  a.nav-link(href='#') Auto Charger
+                p(class="Details") CUSTOMER DETAILS
+                p(class="name") Name
+                  span *
+                p(class="name") E-mail
+                  span *  
+                p(class="name") Country 
+                  span *
+                p(class="method") Payment Method
+                  
+              
+                                            
+              
+          .col-md-6
+            form(action='handler.php')
+              select#inlineFormCustomSelect.custom-select(class="cam").mr-sm-2
+                option(selected='') GoPro Session Camera
             
-        
-                                      
-        
-    .col-md-6
-      form(action='handler.php')
-        select.form-control.form-control-lg
-          option GoPro Session Camera
-            p(class="price")
-              input(type='checkbox' name='a' value='1417')
-              |  399.99 USD
-            p(class="mobile")
-              input(type='checkbox' name='a' value='1680' checked='')
-              |  FREE
-            p(class="smart")
-              input(type='checkbox' name='a' value='1883' checked='')
-              |  79.99 USD
-            p(class="auto")
-              input(type='checkbox' name='a' value='1934')
-              |  29.99 USD
-            div(class="last")
-              input.form-control(type='text' placeholder='First')
-              input.form-control(type='text' placeholder='Last')
-            .form-group
-              label(for='exampleInputEmail1') 
-                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
-                small#emailHelp.form-text.text-muted Make sure you enter valid email address
-  
-            .form-row
-              label(for='validationServer03')
-                input(class="mail")#validationServer03.form-control.is-invalid(type='text' required='')
-                .invalid-feedback
-                  span Make sure you enter valid email address
+            label(class="label")
+              input(type="checkbox" class="checkbox") 
+              span(class="fake")
+              span(class="text") 399.99 USD
+
+
+            
             
 
-            p
-              input(type='submit' value='Checkout')
 
-    .col-md-4
-      | 3 из 3
+
+          .col-md-4
+            | 3 из 3
 
 
     script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')

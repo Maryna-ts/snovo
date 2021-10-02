@@ -2,31 +2,103 @@ body
   margin: 0
   backgraund-color: #ffffffe8
 
-header, main, footer
-  max-width: 1366px
+header
+  max-width: 1600px
+  margin: 0 auto  
+  
+
+.container
+  width: 1170px
   margin: 0 auto
 
-.form-control
-  width: 270px !important
-  color: #495057 !important
+a
+  font-family: 'FiraSans', sans-serif
+  font-size: 17px
+  color: #4a4b4b !important
+  font-weight: lighter
+  cursor: pointer
+  text-decoration: none
+  background-color: transparent
+  padding-left: 0 !important
 
-    
-.form-control-lg  
-  font-size: 17px !important
-  line-height: 1.5
-  font-family: FiraSans
-  border-radius: 2px !important
-  height: calc(1.0em + 1rem + 2px) !important
+a:hover
+    color: #a29bbe !important
 
-.last
-  display: flex
-  justify-content: flex-start
-  .form-control
-    border-radius: 2px !important
+.product
+  a
+    padding-bottom: 35px
 
-.mail
-  margin-top: 15px
-  background-image: none !important
-.form-control.is-invalid
-  background-image: none !important
 
+
+.price
+  a
+    padding-bottom: 35px
+
+.mobile
+  a
+    padding-bottom: 42px    
+
+
+
+.access
+  a
+    font-size: 15px
+    font-weight: bold
+    padding-bottom: 35px
+.wraper
+  margin-top: 100px
+ 
+.Details
+  font-family: 'FiraSans', sans-serif
+  font-size: 15px
+  color: #4a4b4b !important
+  font-weight: bold
+  margin-bottom: 31px
+
+  p
+    font-family: 'FiraSans', sans-serif
+    font-size: 15px
+    color: #4a4b4b !important
+    font-weight: lighter
+
+.name
+  margin-bottom: 45px
+  p
+    color: red
+
+.checkbox
+  display: none
+
+.fake
+  display: inline-block
+  width: 26px
+  height: 26px
+  border: 1px solid black
+  position: relative
+
+.fake
+  &:before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: (translate(-50%, -50%))
+    display: block
+    width: 16px
+    height: 16px
+    background-color: green
+    opacity: 0
+    transition: .2s
+
+.checkbox:checked + .fake::before
+  opacity: 1
+  
+.cam
+  width: 270px
+  height: 42px
+
+.camera
+  font-family:   
+
+
+.label    
