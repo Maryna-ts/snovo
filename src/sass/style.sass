@@ -1,6 +1,6 @@
 body
   margin: 0
-  backgraund-color: #ffffffe8
+  backgraund-color: #ffffff
 
 header
   max-width: 1600px
@@ -25,56 +25,108 @@ a:hover
     color: #a29bbe !important
 
 .product
-  a
-    padding-bottom: 35px
-
+  p
+    padding-bottom: 20px
+    font-family: 'FiraSans', sans-serif
+    font-size: 17px
+    color: #4a4b4b 
+    font-weight: lighter
+    margin-top: 5px
 
 
 .price
   a
-    padding-bottom: 35px
+    padding-bottom: 10px
+
+.price1
+  a
+    padding-bottom: 10px  
+    margin-top: 6px  
 
 .mobile
   a
-    padding-bottom: 42px    
+    padding-bottom: 32px    
 
 
 
 .access
-  a
+  p
     font-size: 15px
     font-weight: bold
-    padding-bottom: 35px
+    padding-bottom: 10px
 .wraper
   margin-top: 100px
  
 .Details
   font-family: 'FiraSans', sans-serif
   font-size: 15px
-  color: #4a4b4b !important
+  color: #4a4b4b 
   font-weight: bold
   margin-bottom: 31px
+  margin-top: 20px
 
-  p
-    font-family: 'FiraSans', sans-serif
-    font-size: 15px
-    color: #4a4b4b !important
-    font-weight: lighter
 
 .name
-  margin-bottom: 45px
-  p
+  margin-bottom: 41px
+  span
     color: red
+    padding-left: 7px
+.name:hover
+  color: #a29bbe
+
+.chek
+  margin-top: 100px
+  form
+    width: 270px
+    height: 43px
+    .custom-select
+      background: #fff url(../images/down.png) no-repeat right .75rem center/10px !important
+
+.chek
+  form
+    .custom-select:hover  
+      background-color: #daecee !important
+
+.chek2
+  form
+    .custom-select:hover  
+      background-color: #cfe5e6 !important
+
 
 .checkbox
   display: none
+
+
+.lab
+  display: flex
+
+
+.label
+  margin-top: 28px  
+  display: flex
+  span
+    margin-bottom: -7px 
+    font-family: 'FiraSans', sans-serif
+    font-size: 17px
+    color: black
+    font-weight: bolder
+
 
 .fake
   display: inline-block
   width: 26px
   height: 26px
-  border: 1px solid black
   position: relative
+  background-color: #c6c7c7
+  
+.fake:hover
+  background-color: #eecdae
+
+.fake1:hover
+  background-color: #eecdae  
+
+.fake2:hover
+  background-color: #eecdae  
 
 .fake
   &:before
@@ -86,19 +138,283 @@ a:hover
     display: block
     width: 16px
     height: 16px
-    background-color: green
+    background: url(../images/down2.png) no-repeat center
     opacity: 0
     transition: .2s
 
 .checkbox:checked + .fake::before
   opacity: 1
   
-.cam
-  width: 270px
-  height: 42px
 
-.camera
-  font-family:   
+.fake1
+  display: inline-block
+  width: 26px
+  height: 26px
+  position: relative
+  background-color: #4a4b4b
+  
+
+.fake1
+  &:before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: (translate(-50%, -50%))
+    display: block
+    width: 16px
+    height: 16px
+    background: url(../images/down2.png) no-repeat center
+    opacity: 0
+    transition: .2s
+
+.checkbox:checked + .fake1::before
+  opacity: 1  
+  
+.text  
+  padding-left: 20px
+
+.label1
+  margin-top: 28px  
+  display: flex
+  span
+    margin-bottom: -7px 
+    font-family: 'FiraSans', sans-serif
+    font-size: 17px
+    color: black
+    font-weight: bolder
+
+  
+.label2
+  margin-top: 95px
+  display: flex
+  span
+    margin-bottom: -7px 
+    font-family: 'FiraSans', sans-serif
+    font-size: 17px
+    color: black
+    font-weight: bolder
+
+.label3
+  margin-top: 28px
+  display: flex
+  margin-bottom: 80px
+  span
+    margin-bottom: -7px 
+    font-family: 'FiraSans', sans-serif
+    font-size: 17px
+    color: black
+    font-weight: bolder  
+
+.fake2
+  display: inline-block
+  width: 26px
+  height: 26px
+  position: relative
+  border: 2px solid #9c9c9d
+  
+
+.fake2
+  &:before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: (translate(-50%, -50%))
+    display: block
+    width: 16px
+    height: 16px
+    background: url(../images/down2.png) no-repeat center
+    opacity: 0
+    transition: .2s
+
+.checkbox:checked + .fake2::before
+  opacity: 1    
+    
+.nam
+  display: flex
+  width: 540px !important
+  margin-bottom: 5px
+.Tnam
+  display: flex
+  justify-content: space-between
+  .form-control
+    width: 270px 
+    height: 43px 
+
+.form-control 
+  border: 2px solid #9c9c9d !important  
+
+.Tnam
+  .form-control:hover
+    background-color: #dcf3dc
+
+.Tnam1
+  .form-control:hover
+    background-color: #c7f5c7    
+
+.Tnam1
+  .form-control
+    width: 270px 
+    height: 43px 
+    border-left: none !important
+    
+      
+.email
+  display: flex
+  height: 65px 
+  
+  .form-control 
+    width: 370px
+    height: 45px
+
+  .form-control:hover
+    background-color: #e79e9f  
+
+.form-control
+  border-radius: 0 !important
+
+.custom-select
+  border-radius: 0 !important     
+  border: 2px solid #9c9c9d !important
+
+.em1
+  display: flex 
+
+   
+.chek2
+  margin-top: 25px
+  form
+    width: 270px
+    height: 43px
+    .custom-select
+      background: #fff url(../images/down.png) no-repeat right .75rem center/10px !important
 
 
-.label    
+.btn-secondary1
+  width: 172px
+  height: 44px 
+  font-family: 'FiraSans', sans-serif
+  font-size: 17px !important
+  font-weight: lighter !important
+  color: #2e2f30 !important
+
+.btn-secondary1:hover
+  background-color: #eef13d
+
+.btn-secondary:hover
+  background-color: #4dc742 !important 
+
+.btn-secondary
+  width: 113px
+  height: 44px
+  background:  #4a4b4b 
+  color: #a8a9aa
+  font-family: 'FiraSans', sans-serif
+  font-size: 17px
+  font-weight: lighter
+  border-radius: 0 !important
+
+.btn-group
+  margin-top: 18px  
+  border: 2px solid #9c9c9d 
+  border-radius: 0
+
+.ccil
+  display: flex
+  a
+    font-family: 'Myriad Pro', sans-serif
+    font-size: 17px
+    color: #2968bc !important
+    font-weight: bold
+    margin-left: 5px
+
+  .nav-link
+    padding: 0 5px 0 5px  !important  
+  
+
+.label4
+  margin-top: 28px
+  display: flex
+  margin-bottom: 54px
+  span
+    font-family: 'FiraSans', sans-serif
+    font-size: 17px
+    color: black
+    font-weight: lighter     
+
+
+
+.col-md-6
+  height: 500px  
+
+.but
+  .btn-primary
+    width: 135px
+    height: 44px
+    border-radius: 0
+    font-family: 'FiraSans', sans-serif
+    font-size: 18px
+    color: #ffffff
+    font-weight: bold
+    margin-bottom: 10px
+
+.but
+  button:hover
+    background-color: #2e9c22
+
+.but1
+  button:hover
+    background-color: #d7eb23  
+
+.ord  
+  display: flex  
+  justify-content: space-between
+
+.orIM
+  margin-top: 100px
+
+.order
+  position: absolute
+  top: 30px
+  left: 32px
+  width: 310px
+  height: 365px
+  h1
+    font-family: 'FiraSans', sans-serif
+    font-size: 19px
+    color: #000000
+    font-weight: bolder
+
+.orIM
+  position: relative  
+ 
+.prod
+  p
+    font-family: 'Myriad Pro', sans-serif
+    font-size: 15px
+    color: #000000
+    font-weight: lighter
+
+.many
+  font-family: 'FiraSans', sans-serif
+  font-size: 15px
+  color: #000000
+  font-weight: bolder
+
+.but1
+  .btn-primary
+    width: 135px
+    height: 44px
+    border-radius: 0
+    font-family: 'FiraSans', sans-serif
+    font-size: 18px
+    color: #ffffff
+    font-weight: bold
+    margin-bottom: 10px 
+    margin-left: 176px 
+    
+
+hr
+  margin-top: 10px !important
+  margin-bottom: 10px  !important 
