@@ -7,8 +7,9 @@ header {
   margin: 0 auto; }
 
 .container {
-  width: 1170px;
-  margin: 0 auto; }
+  max-width: 1170px !important;
+  margin: 0 auto;
+  padding: 0 !important; }
 
 a {
   font-family: 'FiraSans', sans-serif;
@@ -24,9 +25,9 @@ a:hover {
   color: #a29bbe !important; }
 
 .product p {
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   font-family: 'FiraSans', sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   color: #4a4b4b;
   font-weight: lighter;
   margin-top: 5px; }
@@ -34,31 +35,40 @@ a:hover {
 .price a {
   padding-bottom: 10px; }
 
+.price2 a {
+  font-family: 'FiraSans', sans-serif;
+  font-size: 16px;
+  color: #4a4b4b;
+  font-weight: lighter;
+  padding-top: 5px; }
+
 .price1 a {
   padding-bottom: 10px;
-  margin-top: 6px; }
+  margin-top: 13px;
+  font-size: 16px; }
 
 .mobile a {
-  padding-bottom: 32px; }
+  margin-bottom: 38px;
+  margin-top: 11px; }
 
 .access p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   padding-bottom: 10px; }
 
 .wraper {
-  margin-top: 100px; }
+  margin-top: 89px; }
 
 .Details {
   font-family: 'FiraSans', sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   color: #4a4b4b;
   font-weight: bold;
-  margin-bottom: 31px;
-  margin-top: 20px; }
+  margin-bottom: 19px;
+  margin-top: 38px; }
 
 .name {
-  margin-bottom: 41px; }
+  margin-bottom: 40px; }
   .name span {
     color: red;
     padding-left: 7px; }
@@ -66,13 +76,24 @@ a:hover {
 .name:hover {
   color: #a29bbe; }
 
+.name1 {
+  font-family: 'FiraSans', sans-serif;
+  font-size: 17px;
+  color: #4a4b4b;
+  font-weight: lighter; }
+
 .chek {
-  margin-top: 100px; }
+  margin-top: 85px; }
   .chek form {
-    width: 270px;
-    height: 43px; }
+    width: 270px; }
     .chek form .custom-select {
-      background: #fff url(../images/down.png) no-repeat right 0.75rem center/10px !important; }
+      background: #fff url(../images/down.png) no-repeat right 0.75rem center/10px !important;
+      height: 43px;
+      font-family: 'FiraSans', sans-serif;
+      font-size: 16px;
+      color: black;
+      padding-top: 2px;
+      padding-right: 2px; }
 
 .chek form .custom-select:hover {
   background-color: #daecee !important; }
@@ -87,21 +108,14 @@ a:hover {
   display: flex; }
 
 .label {
-  margin-top: 28px;
+  margin-top: 30px;
   display: flex; }
   .label span {
     margin-bottom: -7px;
     font-family: 'FiraSans', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     color: black;
     font-weight: bolder; }
-
-.fake {
-  display: inline-block;
-  width: 26px;
-  height: 26px;
-  position: relative;
-  background-color: #c6c7c7; }
 
 .fake:hover {
   background-color: #eecdae; }
@@ -111,6 +125,13 @@ a:hover {
 
 .fake2:hover {
   background-color: #eecdae; }
+
+.fake {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  background-color: #c6c7c7; }
 
 .fake:before {
   content: "";
@@ -152,38 +173,44 @@ a:hover {
   opacity: 1; }
 
 .text {
-  padding-left: 20px; }
+  padding-left: 21px; }
+
+.textik {
+  padding-left: 15px; }
 
 .label1 {
-  margin-top: 28px;
+  margin-top: 35px;
   display: flex; }
   .label1 span {
     margin-bottom: -7px;
     font-family: 'FiraSans', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     color: black;
-    font-weight: bolder; }
+    font-weight: bolder;
+    font-stretch: extra-condensed; }
 
 .label2 {
-  margin-top: 95px;
+  margin-top: 101px;
   display: flex; }
   .label2 span {
     margin-bottom: -7px;
     font-family: 'FiraSans', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     color: black;
-    font-weight: bolder; }
+    font-weight: bolder;
+    font-stretch: extra-condensed; }
 
 .label3 {
-  margin-top: 28px;
+  margin-top: 34px;
   display: flex;
-  margin-bottom: 80px; }
+  margin-bottom: 85px; }
   .label3 span {
     margin-bottom: -7px;
     font-family: 'FiraSans', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     color: black;
-    font-weight: bolder; }
+    font-weight: bolder;
+    font-stretch: extra-condensed; }
 
 .fake2 {
   display: inline-block;
@@ -211,11 +238,15 @@ a:hover {
 .nam {
   display: flex;
   width: 540px !important;
-  margin-bottom: 5px; }
+  margin-bottom: -4px; }
 
 .Tnam {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-family: 'FiraSans', sans-serif;
+  font-size: 17px;
+  color: #979899;
+  font-weight: lighter; }
   .Tnam .form-control {
     width: 270px;
     height: 43px; }
@@ -230,9 +261,13 @@ a:hover {
   background-color: #c7f5c7; }
 
 .Tnam1 .form-control {
-  width: 270px;
+  width: 300px;
   height: 43px;
-  border-left: none !important; }
+  border-left: none !important;
+  font-family: 'FiraSans', sans-serif;
+  font-size: 17px;
+  color: #979899;
+  font-weight: lighter; }
 
 .email {
   display: flex;
@@ -256,32 +291,39 @@ a:hover {
 .chek2 {
   margin-top: 25px; }
   .chek2 form {
-    width: 270px;
-    height: 43px; }
+    width: 270px; }
     .chek2 form .custom-select {
-      background: #fff url(../images/down.png) no-repeat right 0.75rem center/10px !important; }
+      background: #fff url(../images/down.png) no-repeat right 0.75rem center/10px !important;
+      height: 43px;
+      font-family: 'FiraSans', sans-serif;
+      font-size: 16px;
+      color: #111213;
+      font-weight: lighter;
+      padding-top: 2px; }
 
 .btn-secondary1 {
-  width: 172px;
-  height: 44px;
+  width: 169px;
+  height: 40px;
   font-family: 'FiraSans', sans-serif;
-  font-size: 17px !important;
+  font-size: 16px !important;
   font-weight: lighter !important;
   color: #2e2f30 !important; }
 
-.btn-secondary1:hover {
-  background-color: #eef13d; }
+.btn-secondary1:focus {
+  vertical-align: middle;
+  background-color: #4a4b4b;
+  color: #ffff !important; }
 
 .btn-secondary:hover {
-  background-color: #4dc742 !important; }
+  background-color: #4a4b4b !important; }
 
 .btn-secondary {
   width: 113px;
-  height: 44px;
+  height: 40px;
   background: #4a4b4b;
   color: #a8a9aa;
   font-family: 'FiraSans', sans-serif;
-  font-size: 17px;
+  font-size: 16px !important;
   font-weight: lighter;
   border-radius: 0 !important; }
 
@@ -319,10 +361,11 @@ a:hover {
   height: 44px;
   border-radius: 0;
   font-family: 'FiraSans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   font-weight: bold;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  background-color: #388ccc !important; }
 
 .but button:hover {
   background-color: #2e9c22; }
@@ -332,10 +375,11 @@ a:hover {
 
 .ord {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 17px; }
 
 .orIM {
-  margin-top: 100px; }
+  margin-top: 85px; }
 
 .order {
   position: absolute;
@@ -356,16 +400,27 @@ a:hover {
   font-family: 'Myriad Pro', sans-serif;
   font-size: 15px;
   color: #000000;
-  font-weight: lighter; }
+  font-weight: lighter;
+  margin-bottom: 8px; }
+
+.prod1 p {
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 15px;
+  color: #000000;
+  font-weight: bolder;
+  margin-bottom: 8px; }
 
 .many {
   font-family: 'FiraSans', sans-serif;
   font-size: 15px;
   color: #000000;
-  font-weight: bolder; }
+  font-weight: bolder;
+  text-align: right; }
+  .many p {
+    margin-bottom: 8px; }
 
 .but1 .btn-primary {
-  width: 135px;
+  width: 146px;
   height: 44px;
   border-radius: 0;
   font-family: 'FiraSans', sans-serif;
@@ -373,10 +428,11 @@ a:hover {
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 10px;
-  margin-left: 176px; }
+  margin-left: 163px;
+  background-color: #388ccc !important; }
 
 hr {
-  margin-top: 10px !important;
+  margin-top: 20px !important;
   margin-bottom: 10px  !important; }
 
 .psev {
@@ -428,7 +484,8 @@ hr {
   .col-4 {
     display: none; }
   .psev {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
   .orIM {
     margin-top: 150px;
     margin-left: 30px;

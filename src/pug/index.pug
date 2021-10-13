@@ -16,96 +16,98 @@ html(lang="en")
     header 
       .container
         .row(class="rad")
-          .col-md-2
-            div(class="wraper")
-              nav.nav.flex-column
-                div(class="product")
-                  p Product
-                div(class="price")  
-                  a.nav-link(href='#') Product Price
-                div(class="mobile")  
-                  a.nav-link(href='#') Mobile Apps
-                div(class="access")
-                  p ACCESSORIES
-                div(class="price")
-                  a.nav-link(href='#') Smart Remote
-                div(class="price1")
-                  a.nav-link(href='#') Auto Charger
-                p(class="Details") CUSTOMER DETAILS
-                p(class="name") Name
-                  span *
-                p(class="name") E-mail
-                  span *  
-                p(class="name") Country 
-                  span *
-                p(class="name") Payment Method
+          .col-md-8
+            .row
+              .col-md-3
+                div(class="wraper")
+                  nav.nav.flex-column
+                    div(class="product")
+                      p Product
+                    div(class="price")  
+                      a.nav-link(href='#') Product Price
+                    div(class="mobile")  
+                      a.nav-link(href='#') Mobile Apps
+                    div(class="access")
+                      p ACCESSORIES
+                    div(class="price2")
+                      a.nav-link(href='#') Smart Remote
+                    div(class="price1")
+                      a.nav-link(href='#') Auto Charger
+                    p(class="Details") CUSTOMER DETAILS
+                    p(class="name") Name
+                      span *
+                    p(class="name") E-mail
+                      span *  
+                    p(class="name") Country 
+                      span *
+                    p(class="name1") Payment Method
+                      
                   
-              
-                                            
-              
-          .col-md-6
-            div(class="chek")
-              form(action='handler.php')
-                select#inlineFormCustomSelect.custom-select(class="cam").mr-sm-2
-                  option(selected='') GoPro Session Camera
+                                                
                   
-              div(vlass="lab")
-                label(class="label")
-                  input(type="checkbox" class="checkbox") 
-                  span(class="fake")
-                  span(class="text") 399.99 USD
+              .col-md-9 
+                div(class="chek")
+                  form(action='handler.php')
+                    select#inlineFormCustomSelect.custom-select(class="cam").mr-sm-2
+                      option(selected='') GoPro Session Camera
+                      
+                  div(vlass="lab")
+                    label(class="label")
+                      input(type="checkbox" class="checkbox") 
+                      span(class="fake")
+                      span(class="text") 399.99 USD
 
-                label(class="label1")
-                  input(type="checkbox" class="checkbox") 
-                  span(class="fake")
-                  span(class="text") FREE
-              
-                label(class="label2")
-                  input(type="checkbox" class="checkbox") 
-                  span(class="fake1")
-                  span(class="text") 79.99 USD
-
-                label(class="label3")
-                  input(type="checkbox" class="checkbox") 
-                  span(class="fake2")
-                  span(class="text") 29.99 USD
-
-            form(class="nam")
-              div(class="Tnam")
-                input.form-control(type='text' placeholder='First')
-              div(class="Tnam1")
-                input.form-control(type='text' placeholder='Last')
-
-            form(class="email")
-              div(class="em1")
-                .form-group
-                  label(for='exampleInputEmail1') 
-                  input.form-control(type='email' required='' placeholder='' oninvalid="this.setCustomValidity('Make sure you enter valid email address')")
+                    label(class="label1")
+                      input(type="checkbox" class="checkbox") 
+                      span(class="fake")
+                      span(class="text") FREE
                   
-          
-            div(class="chek2")
-              form(action='handler.php')
-                select#inlineFormCustomSelect.custom-select(class="cam").mr-sm-2
-                  option(selected='') Select
+                    label(class="label2")
+                      input(type="checkbox" class="checkbox") 
+                      span(class="fake1")
+                      span(class="text") 79.99 USD
 
-            .btn-group(role='group' aria-label='Basic example')
-              button.btn.btn-secondary(type='button') Credit Card
-              button.btn.btn-secondary1(type='button') PayPal/Credit Card
-        
-            div(vlass="lab")
-              label(class="label4")
-                  input(type="checkbox" class="checkbox") 
-                  span(class="fake2")
-                  span(class="text") I accept 
-                  div(class="ccil")
-                    a.nav-link(href='#') End User License Agreement            
-         
-            div(class="but")       
-              button.btn.btn-primary(type='button') Checkout
+                    label(class="label3")
+                      input(type="checkbox" class="checkbox") 
+                      span(class="fake2")
+                      span(class="text") 29.99 USD
+
+                form(class="nam")
+                  div(class="Tnam")
+                    input.form-control(type='text' placeholder='First')
+                  div(class="Tnam1")
+                    input.form-control(type='text' placeholder='Last')
+
+                form(class="email")
+                  div(class="em1")
+                    .form-group
+                      label(for='exampleInputEmail1') 
+                      input.form-control(type='email' required='' placeholder='' oninvalid="this.setCustomValidity('Make sure you enter valid email address')")
+                      
+              
+                div(class="chek2")
+                  form(action='handler.php')
+                    select#inlineFormCustomSelect.custom-select(class="cam").mr-sm-2
+                      option(selected='') Select
+
+                .btn-group(role='group' aria-label='Basic example')
+                  button.btn.btn-secondary(type='button') Credit Card
+                  button.btn.btn-secondary1(type='button') PayPal/Credit Card
+            
+                div(vlass="lab")
+                  label(class="label4")
+                      input(type="checkbox" class="checkbox") 
+                      span(class="fake2")
+                      span(class="textik") I accept 
+                      div(class="ccil")
+                        a.nav-link(href='#') End User License Agreement            
+            
+                div(class="but")       
+                  button.btn.btn-primary(type='button') Checkout
 
           .col-4
             div(class="orIM")
-              img(src="../images/28.png", alt="img")
+              img(src="./images/28.png", alt="img")
               div(class="order")  
                 h1 My Order 
                 <hr>
@@ -114,7 +116,7 @@ html(lang="en")
                     p Product Sub-total 
                     p Mobile Apps
                     p Auto Charger
-                    p Smart Remote  TOTAL
+                    p Smart Remote  
                   div(class="many")  
                     p 399.99 USD
                     p Free 
@@ -122,7 +124,7 @@ html(lang="en")
                     p 79.99 USD  
                 <hr>
                 div(class="ord")
-                  div(class="prod")
+                  div(class="prod1")
                     p TOTAL
                   div(class="many")
                     p  479.98 USD
@@ -221,7 +223,7 @@ html(lang="en")
 
         div(class="psev")
           div(class="orIM")
-            img(src="../images/28.png", alt="img")
+            img(src="./images/28.png", alt="img")
             div(class="order")  
               h1 My Order 
               <hr>
@@ -245,6 +247,7 @@ html(lang="en")
               div(class="but1")       
                 button.btn.btn-primary(type='button') Checkout 
 
+    
     script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
     script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
