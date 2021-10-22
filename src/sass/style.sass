@@ -68,7 +68,7 @@ a:hover
     font-weight: bold
     padding-bottom: 10px
 .wraper
-  margin-top: 89px
+  margin-top: 84px
  
 .Details
   font-family: 'FiraSans', sans-serif
@@ -87,6 +87,9 @@ a:hover
 .name:hover
   color: #a29bbe
 
+.col-sm-6  
+    padding-left: 0px !important  
+
 .name1
   font-family: 'FiraSans', sans-serif
   font-size: 17px
@@ -94,7 +97,7 @@ a:hover
   font-weight: lighter
 
 .chek
-  margin-top: 85px
+  margin-top: 82px
   form
     width: 270px
     .custom-select
@@ -262,14 +265,23 @@ a:hover
 
 .checkbox:checked + .fake2::before
   opacity: 1    
-    
+
+.col-sm-10
+  padding: 0 !important   
+
 .nam
   display: flex
-  width: 540px !important
+  width: 540px 
   margin-bottom: -4px
+  margin-right: 5px
+
+.form-row 
+  margin-right: 0 !important
+  margin-left: 0  !important
+.col
+  padding-left: 0 !important
+  padding-right: 0 !important
 .Tnam
-  display: flex
-  justify-content: space-between
   font-family: 'FiraSans', sans-serif
   font-size: 17px
   color: #979899
@@ -288,6 +300,7 @@ a:hover
     background-color: #dcf3dc
 
 .Tnam1
+  
   .form-control:hover
     background-color: #c7f5c7    
 
@@ -325,7 +338,7 @@ a:hover
 
    
 .chek2
-  margin-top: 25px
+  margin-top: 24px
   form
     width: 270px
     .custom-select
@@ -376,7 +389,7 @@ a:hover
     font-size: 17px
     color: #2968bc !important
     font-weight: bold
-    margin-left: 5px
+    //margin-left: 5px
 
   .nav-link
     padding: 0 5px 0 5px  !important  
@@ -425,13 +438,13 @@ a:hover
   margin-bottom: 17px
 
 .orIM
-  margin-top: 85px
+  margin-top: 81px
 
 .order
   position: absolute
   top: 30px
-  left: 32px
-  width: 310px
+  left: 28px
+  width: 316px
   height: 365px
   h1
     font-family: 'FiraSans', sans-serif
@@ -526,19 +539,36 @@ hr
     a 
       padding-bottom: 20px      
 
+@media screen and ( max-width: 989px)  
+ .name 
+    margin-bottom: 34px 
 
+@media screen and ( max-width: 910px) 
+  .Details  
+    margin-bottom: 10px
+    margin-top: 10px
+
+  .name 
+    margin-bottom: 36px
+  
 @media screen and ( max-width: 909px)  
 
   .label3 
     margin-top: 50px
     margin-bottom: 85px
   .btn-group 
-    margin-top: 38px  
+    margin-top: 32px  
 
-@media screen and ( max-width: 902px) 
+  .Details 
+    margin-bottom: 25px
+    margin-top: 23px  
+
+@media screen and ( max-width: 903px) 
    
   .label
     margin-top: 55px
+
+  
 
 @media screen and ( max-width: 861px) 
   .label
@@ -549,14 +579,24 @@ hr
 
   .label3 
     margin-top: 66px    
+
+  .price2 a 
+    padding-top: 9px
+
+  .access p 
+    margin-bottom: 18px
  
 @media screen and ( max-width: 861px)    
   .label2
     margin-top: 130px
 
+@media screen and ( max-width: 846px) 
+  .mobile a 
+    margin-bottom: 11px
+
 @media screen and ( max-width: 639px) 
   .btn-group 
-    margin-top: 66px   
+    margin-top: 55px   
 
 @media screen and ( max-width: 575px)  
   .label2 
@@ -567,11 +607,24 @@ hr
 
   .col-sm-4
     display: flex
-    justify-content: center  
+    justify-content: center
+    margin-left: 15px  
 
   .btn-group 
     margin-top: 32px  
 
+  
+
+  .Details 
+    margin-bottom: 30px  
+
+  .Tnam
+    .form-control 
+      width: 100% 
+
+  .Tnam1
+    .form-control 
+      width: 100%     
 
 @media screen and ( max-width: 564px)  
   .label2 
